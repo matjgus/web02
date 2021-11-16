@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    #form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    }
+</style>
+
+
+</head>
+<body>
+<form action="/web02/ex02.jsp" method="POST" >
+    <legend>가입</legend><br><br>
+<div>
+    <label for="name">이름</label>
+    <input type="text" id="name" name="name"><br><br>
+</div>
+<div>
+    <label for="age">나이</label>
+    <select name="age" id="age">
+        <option value=0>선택해주세요.</option>
+    </select><br><br>
+</div>
+<div>
+    <label>성별</label>
+    <input type="radio" name="gender" id="gender"value="man"> 남자
+    <input type="radio" name="gender" id="gender"value="woman" checked> 여자
+</div>
+    <br><br>
+<div>
+    <label>취미</label>
+    <input type="checkbox" name ="hobby" id="hobby1" value="sport"> 운동 
+    <input type="checkbox" name ="hobby" id="hobby2" value="book"> 책보기 
+    <input type="checkbox" name ="hobby" id="hobby3" value="game"> 게임 
+    <input type="checkbox" name ="hobby" id="hobby4" value="tv"> tv시청 
+</div>
+    <br><br>
+    <input type="submit" id="check"  value="보내기">
+    <input type="button" id="clear" value="지우기" >
+</form>
+</body>
+</html>

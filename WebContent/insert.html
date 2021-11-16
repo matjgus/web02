@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    #form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    }
+</style>
+
+
+</head>
+<body>
+<form action="/web02/insert.jsp" method="POST" >
+    <legend>가입</legend><br><br>
+<div>
+    <label for="memberid">아이디</label>
+    <input type="text" name="memberid"><br><br>
+</div>
+<div>
+    <label for="pass">비밀번호</label>
+    <input type="text" name="pass"><br><br>
+</div>
+<div>
+    <label for="name">이름</label>
+    <input type="text" name="name"><br><br>
+</div>
+<div>
+    <label for="email">이메일</label>
+    <input type="text" name="email"><br><br>
+</div>
+
+
+    <br><br>
+    <input type="submit" id="check"  value="보내기">
+    <input type="button" id="clear" value="지우기" >
+</form>
+</body>
+</html>
