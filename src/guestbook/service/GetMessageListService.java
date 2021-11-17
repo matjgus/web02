@@ -15,6 +15,7 @@ public class GetMessageListService {
 	public static GetMessageListService getInstance() {
 		return instance;
 	}
+	
 	private GetMessageListService() {
 		
 	}
