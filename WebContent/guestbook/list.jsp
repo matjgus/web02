@@ -35,7 +35,24 @@
 등록된 메시지가 없습니다.
 </c:if>
 <c:if test="${!viewData.isEmpty()}">
-등록된 메시지가 없습니다.
+<table border="1">
+	<c:forEach var="message" items="${viewData.messageList}">
+	<tr>
+		<td>
+			메세지 번호: ${message.id }<br/>
+			손님이름: ${message.guestName }<br/>
+			메시지: ${message.message }<br/>
+			<a href="confirmDeletion.jsp?messageId=${message.id }">[삭제하기]</a>
+		</td>
+	</tr>
+	
+	</c:forEach>
+</table>
+
+<c:forEach var="pageNum" begin="1" end="${viewData.pageTotalCount }">
+<a href="list.jsp?page=${pageNum }">[${pageNum }]</a>
+</c:forEach>
+
 </c:if>
 
 </body>
